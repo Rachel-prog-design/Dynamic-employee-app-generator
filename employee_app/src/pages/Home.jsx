@@ -39,7 +39,7 @@ function Home() {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      <div className="cards">
+      <div className="cards-container">
         {filteredEmployees.map((employee) => (
           <EmployeeCard key={employee.id} employee={employee} />
         ))}
