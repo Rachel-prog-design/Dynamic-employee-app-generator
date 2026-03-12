@@ -43,9 +43,14 @@ function Home() {
         {filteredEmployees.map((employee) => (
           <EmployeeCard key={employee.id} employee={employee} />
         ))}
+
+        <button onClick={() => window.print()}>
+    Print Employees
+   </button>
       </div>
     </div>
   );
+
 }
 
 export default Home;
